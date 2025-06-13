@@ -1,2 +1,8 @@
+cat <<EOF >> .gitignore
+# Ignore Terraform state and cache
 .terraform/
-.terraform.tfstate.backup/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+EOF
